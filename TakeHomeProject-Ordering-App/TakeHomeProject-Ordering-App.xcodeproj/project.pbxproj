@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F4CC1D9286AEF65004331AE /* Orders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4CC1D8286AEF65004331AE /* Orders.swift */; };
+		7F4CC1DB286AEFFF004331AE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4CC1DA286AEFFF004331AE /* NetworkManager.swift */; };
+		7F4CC1DD286AF476004331AE /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4CC1DC286AF476004331AE /* Section.swift */; };
+		7F4CC1DF286B01C1004331AE /* Date + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4CC1DE286B01C1004331AE /* Date + Extensions.swift */; };
+		7F4CC1E5286B09EF004331AE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4CC1E3286B09EF004331AE /* ProfileViewController.swift */; };
+		7F4CC1E6286B09EF004331AE /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F4CC1E4286B09EF004331AE /* ProfileViewController.xib */; };
+		7F4CC1E9286B0A26004331AE /* MyAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4CC1E7286B0A26004331AE /* MyAddressViewController.swift */; };
+		7F4CC1EA286B0A26004331AE /* MyAddressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F4CC1E8286B0A26004331AE /* MyAddressViewController.xib */; };
+		7F4CC1ED286B0A63004331AE /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4CC1EB286B0A63004331AE /* HelpViewController.swift */; };
+		7F4CC1EE286B0A63004331AE /* HelpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F4CC1EC286B0A63004331AE /* HelpViewController.xib */; };
+		7F4CC1F5286B1482004331AE /* AccountViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4CC1F4286B1482004331AE /* AccountViewPresenter.swift */; };
+		7F4CC1FA286B1A57004331AE /* ListOfOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4CC1F8286B1A57004331AE /* ListOfOrdersViewController.swift */; };
+		7F4CC1FB286B1A57004331AE /* ListOfOrdersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F4CC1F9286B1A57004331AE /* ListOfOrdersViewController.xib */; };
+		7F4CC1FE286B20FA004331AE /* OrderTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4CC1FC286B20FA004331AE /* OrderTableCell.swift */; };
+		7F4CC1FF286B20FA004331AE /* OrderTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F4CC1FD286B20FA004331AE /* OrderTableCell.xib */; };
+		7F94EBEE286AD991004A959E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F94EBED286AD991004A959E /* AppDelegate.swift */; };
+		7F94EBF0286AD991004A959E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F94EBEF286AD991004A959E /* SceneDelegate.swift */; };
+		7F94EBF2286AD991004A959E /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F94EBF1286AD991004A959E /* AccountViewController.swift */; };
+		7F94EBF5286AD991004A959E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F94EBF3286AD991004A959E /* Main.storyboard */; };
+		7F94EBF7286AD993004A959E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F94EBF6286AD993004A959E /* Assets.xcassets */; };
+		7F94EBFA286AD993004A959E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F94EBF8286AD993004A959E /* LaunchScreen.storyboard */; };
+		7F94EC05286AD993004A959E /* TakeHomeProject_Ordering_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F94EC04286AD993004A959E /* TakeHomeProject_Ordering_AppTests.swift */; };
+		7F94EC1F286ADB7E004A959E /* OrderCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F94EC1D286ADB7E004A959E /* OrderCollectionCell.swift */; };
+		7F94EC20286ADB7E004A959E /* OrderCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F94EC1E286ADB7E004A959E /* OrderCollectionCell.xib */; };
+		7F94EC25286ADFF2004A959E /* OrderContainerTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F94EC23286ADFF2004A959E /* OrderContainerTableCell.swift */; };
+		7F94EC26286ADFF2004A959E /* OrderContainerTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F94EC24286ADFF2004A959E /* OrderContainerTableCell.xib */; };
+		7F94EC29286AE1C1004A959E /* SectionTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F94EC27286AE1C1004A959E /* SectionTableCell.swift */; };
+		7F94EC2A286AE1C1004A959E /* SectionTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F94EC28286AE1C1004A959E /* SectionTableCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7F94EC01286AD993004A959E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F94EBE2286AD991004A959E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F94EBE9286AD991004A959E;
+			remoteInfo = "TakeHomeProject-Ordering-App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7F4CC1D8286AEF65004331AE /* Orders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Orders.swift; sourceTree = "<group>"; };
+		7F4CC1DA286AEFFF004331AE /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		7F4CC1DC286AF476004331AE /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		7F4CC1DE286B01C1004331AE /* Date + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + Extensions.swift"; sourceTree = "<group>"; };
+		7F4CC1E3286B09EF004331AE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		7F4CC1E4286B09EF004331AE /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		7F4CC1E7286B0A26004331AE /* MyAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAddressViewController.swift; sourceTree = "<group>"; };
+		7F4CC1E8286B0A26004331AE /* MyAddressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyAddressViewController.xib; sourceTree = "<group>"; };
+		7F4CC1EB286B0A63004331AE /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		7F4CC1EC286B0A63004331AE /* HelpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelpViewController.xib; sourceTree = "<group>"; };
+		7F4CC1F4286B1482004331AE /* AccountViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewPresenter.swift; sourceTree = "<group>"; };
+		7F4CC1F8286B1A57004331AE /* ListOfOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfOrdersViewController.swift; sourceTree = "<group>"; };
+		7F4CC1F9286B1A57004331AE /* ListOfOrdersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListOfOrdersViewController.xib; sourceTree = "<group>"; };
+		7F4CC1FC286B20FA004331AE /* OrderTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableCell.swift; sourceTree = "<group>"; };
+		7F4CC1FD286B20FA004331AE /* OrderTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderTableCell.xib; sourceTree = "<group>"; };
+		7F94EBEA286AD991004A959E /* TakeHomeProject-Ordering-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TakeHomeProject-Ordering-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F94EBED286AD991004A959E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7F94EBEF286AD991004A959E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7F94EBF1286AD991004A959E /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		7F94EBF4286AD991004A959E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7F94EBF6286AD993004A959E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7F94EBF9286AD993004A959E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7F94EBFB286AD993004A959E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F94EC00286AD993004A959E /* TakeHomeProject-Ordering-AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TakeHomeProject-Ordering-AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F94EC04286AD993004A959E /* TakeHomeProject_Ordering_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeHomeProject_Ordering_AppTests.swift; sourceTree = "<group>"; };
+		7F94EC1D286ADB7E004A959E /* OrderCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCollectionCell.swift; sourceTree = "<group>"; };
+		7F94EC1E286ADB7E004A959E /* OrderCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderCollectionCell.xib; sourceTree = "<group>"; };
+		7F94EC23286ADFF2004A959E /* OrderContainerTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderContainerTableCell.swift; sourceTree = "<group>"; };
+		7F94EC24286ADFF2004A959E /* OrderContainerTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderContainerTableCell.xib; sourceTree = "<group>"; };
+		7F94EC27286AE1C1004A959E /* SectionTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTableCell.swift; sourceTree = "<group>"; };
+		7F94EC28286AE1C1004A959E /* SectionTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionTableCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F94EBE7286AD991004A959E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F94EBFD286AD993004A959E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F4CC1E0286B09BA004331AE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7F94EBF1286AD991004A959E /* AccountViewController.swift */,
+				7F4CC1F4286B1482004331AE /* AccountViewPresenter.swift */,
+				7F4CC1EB286B0A63004331AE /* HelpViewController.swift */,
+				7F4CC1EC286B0A63004331AE /* HelpViewController.xib */,
+				7F4CC1F8286B1A57004331AE /* ListOfOrdersViewController.swift */,
+				7F4CC1F9286B1A57004331AE /* ListOfOrdersViewController.xib */,
+				7F94EBF3286AD991004A959E /* Main.storyboard */,
+				7F4CC1E7286B0A26004331AE /* MyAddressViewController.swift */,
+				7F4CC1E8286B0A26004331AE /* MyAddressViewController.xib */,
+				7F4CC1E3286B09EF004331AE /* ProfileViewController.swift */,
+				7F4CC1E4286B09EF004331AE /* ProfileViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7F4CC1EF286B0F12004331AE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7F4CC1D8286AEF65004331AE /* Orders.swift */,
+				7F4CC1DC286AF476004331AE /* Section.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7F4CC1F0286B0F28004331AE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7F4CC1DE286B01C1004331AE /* Date + Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7F4CC1F2286B0F48004331AE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7F94EC21286ADFAD004A959E /* CollectionCell */,
+				7F94EC22286ADFB6004A959E /* TableCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7F4CC1F3286B0F55004331AE /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				7F4CC1DA286AEFFF004331AE /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		7F94EBE1286AD991004A959E = {
+			isa = PBXGroup;
+			children = (
+				7F94EBEC286AD991004A959E /* TakeHomeProject-Ordering-App */,
+				7F94EC03286AD993004A959E /* TakeHomeProject-Ordering-AppTests */,
+				7F94EBEB286AD991004A959E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7F94EBEB286AD991004A959E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F94EBEA286AD991004A959E /* TakeHomeProject-Ordering-App.app */,
+				7F94EC00286AD993004A959E /* TakeHomeProject-Ordering-AppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F94EBEC286AD991004A959E /* TakeHomeProject-Ordering-App */ = {
+			isa = PBXGroup;
+			children = (
+				7F94EBED286AD991004A959E /* AppDelegate.swift */,
+				7F94EBF6286AD993004A959E /* Assets.xcassets */,
+				7F4CC1F0286B0F28004331AE /* Extensions */,
+				7F94EBFB286AD993004A959E /* Info.plist */,
+				7F94EBF8286AD993004A959E /* LaunchScreen.storyboard */,
+				7F4CC1EF286B0F12004331AE /* Model */,
+				7F4CC1F3286B0F55004331AE /* Networking */,
+				7F94EBEF286AD991004A959E /* SceneDelegate.swift */,
+				7F4CC1F2286B0F48004331AE /* View */,
+				7F4CC1E0286B09BA004331AE /* ViewControllers */,
+			);
+			path = "TakeHomeProject-Ordering-App";
+			sourceTree = "<group>";
+		};
+		7F94EC03286AD993004A959E /* TakeHomeProject-Ordering-AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				7F94EC04286AD993004A959E /* TakeHomeProject_Ordering_AppTests.swift */,
+			);
+			path = "TakeHomeProject-Ordering-AppTests";
+			sourceTree = "<group>";
+		};
+		7F94EC21286ADFAD004A959E /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				7F94EC1D286ADB7E004A959E /* OrderCollectionCell.swift */,
+				7F94EC1E286ADB7E004A959E /* OrderCollectionCell.xib */,
+			);
+			path = CollectionCell;
+			sourceTree = "<group>";
+		};
+		7F94EC22286ADFB6004A959E /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				7F94EC23286ADFF2004A959E /* OrderContainerTableCell.swift */,
+				7F94EC24286ADFF2004A959E /* OrderContainerTableCell.xib */,
+				7F4CC1FC286B20FA004331AE /* OrderTableCell.swift */,
+				7F4CC1FD286B20FA004331AE /* OrderTableCell.xib */,
+				7F94EC27286AE1C1004A959E /* SectionTableCell.swift */,
+				7F94EC28286AE1C1004A959E /* SectionTableCell.xib */,
+			);
+			path = TableCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F94EBE9286AD991004A959E /* TakeHomeProject-Ordering-App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F94EC14286AD993004A959E /* Build configuration list for PBXNativeTarget "TakeHomeProject-Ordering-App" */;
+			buildPhases = (
+				7F94EBE6286AD991004A959E /* Sources */,
+				7F94EBE7286AD991004A959E /* Frameworks */,
+				7F94EBE8286AD991004A959E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TakeHomeProject-Ordering-App";
+			productName = "TakeHomeProject-Ordering-App";
+			productReference = 7F94EBEA286AD991004A959E /* TakeHomeProject-Ordering-App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7F94EBFF286AD993004A959E /* TakeHomeProject-Ordering-AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F94EC17286AD993004A959E /* Build configuration list for PBXNativeTarget "TakeHomeProject-Ordering-AppTests" */;
+			buildPhases = (
+				7F94EBFC286AD993004A959E /* Sources */,
+				7F94EBFD286AD993004A959E /* Frameworks */,
+				7F94EBFE286AD993004A959E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F94EC02286AD993004A959E /* PBXTargetDependency */,
+			);
+			name = "TakeHomeProject-Ordering-AppTests";
+			productName = "TakeHomeProject-Ordering-AppTests";
+			productReference = 7F94EC00286AD993004A959E /* TakeHomeProject-Ordering-AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F94EBE2286AD991004A959E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					7F94EBE9286AD991004A959E = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					7F94EBFF286AD993004A959E = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 7F94EBE9286AD991004A959E;
+					};
+				};
+			};
+			buildConfigurationList = 7F94EBE5286AD991004A959E /* Build configuration list for PBXProject "TakeHomeProject-Ordering-App" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7F94EBE1286AD991004A959E;
+			productRefGroup = 7F94EBEB286AD991004A959E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F94EBE9286AD991004A959E /* TakeHomeProject-Ordering-App */,
+				7F94EBFF286AD993004A959E /* TakeHomeProject-Ordering-AppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F94EBE8286AD991004A959E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F4CC1E6286B09EF004331AE /* ProfileViewController.xib in Resources */,
+				7F94EC2A286AE1C1004A959E /* SectionTableCell.xib in Resources */,
+				7F94EC20286ADB7E004A959E /* OrderCollectionCell.xib in Resources */,
+				7F94EC26286ADFF2004A959E /* OrderContainerTableCell.xib in Resources */,
+				7F94EBFA286AD993004A959E /* LaunchScreen.storyboard in Resources */,
+				7F94EBF7286AD993004A959E /* Assets.xcassets in Resources */,
+				7F4CC1FB286B1A57004331AE /* ListOfOrdersViewController.xib in Resources */,
+				7F4CC1EE286B0A63004331AE /* HelpViewController.xib in Resources */,
+				7F4CC1FF286B20FA004331AE /* OrderTableCell.xib in Resources */,
+				7F94EBF5286AD991004A959E /* Main.storyboard in Resources */,
+				7F4CC1EA286B0A26004331AE /* MyAddressViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F94EBFE286AD993004A959E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F94EBE6286AD991004A959E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F4CC1F5286B1482004331AE /* AccountViewPresenter.swift in Sources */,
+				7F4CC1DD286AF476004331AE /* Section.swift in Sources */,
+				7F4CC1FA286B1A57004331AE /* ListOfOrdersViewController.swift in Sources */,
+				7F4CC1FE286B20FA004331AE /* OrderTableCell.swift in Sources */,
+				7F4CC1DF286B01C1004331AE /* Date + Extensions.swift in Sources */,
+				7F94EC1F286ADB7E004A959E /* OrderCollectionCell.swift in Sources */,
+				7F4CC1D9286AEF65004331AE /* Orders.swift in Sources */,
+				7F94EBF2286AD991004A959E /* AccountViewController.swift in Sources */,
+				7F94EC29286AE1C1004A959E /* SectionTableCell.swift in Sources */,
+				7F4CC1E5286B09EF004331AE /* ProfileViewController.swift in Sources */,
+				7F4CC1ED286B0A63004331AE /* HelpViewController.swift in Sources */,
+				7F4CC1DB286AEFFF004331AE /* NetworkManager.swift in Sources */,
+				7F94EC25286ADFF2004A959E /* OrderContainerTableCell.swift in Sources */,
+				7F94EBEE286AD991004A959E /* AppDelegate.swift in Sources */,
+				7F94EBF0286AD991004A959E /* SceneDelegate.swift in Sources */,
+				7F4CC1E9286B0A26004331AE /* MyAddressViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F94EBFC286AD993004A959E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F94EC05286AD993004A959E /* TakeHomeProject_Ordering_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7F94EC02286AD993004A959E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F94EBE9286AD991004A959E /* TakeHomeProject-Ordering-App */;
+			targetProxy = 7F94EC01286AD993004A959E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7F94EBF3286AD991004A959E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F94EBF4286AD991004A959E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7F94EBF8286AD993004A959E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F94EBF9286AD993004A959E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7F94EC12286AD993004A959E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7F94EC13286AD993004A959E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F94EC15286AD993004A959E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TakeHomeProject-Ordering-App/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.esikmalazman.TakeHomeProject-Ordering-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7F94EC16286AD993004A959E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TakeHomeProject-Ordering-App/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.esikmalazman.TakeHomeProject-Ordering-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7F94EC18286AD993004A959E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.esikmalazman.TakeHomeProject-Ordering-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TakeHomeProject-Ordering-App.app/TakeHomeProject-Ordering-App";
+			};
+			name = Debug;
+		};
+		7F94EC19286AD993004A959E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.esikmalazman.TakeHomeProject-Ordering-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TakeHomeProject-Ordering-App.app/TakeHomeProject-Ordering-App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F94EBE5286AD991004A959E /* Build configuration list for PBXProject "TakeHomeProject-Ordering-App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F94EC12286AD993004A959E /* Debug */,
+				7F94EC13286AD993004A959E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F94EC14286AD993004A959E /* Build configuration list for PBXNativeTarget "TakeHomeProject-Ordering-App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F94EC15286AD993004A959E /* Debug */,
+				7F94EC16286AD993004A959E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F94EC17286AD993004A959E /* Build configuration list for PBXNativeTarget "TakeHomeProject-Ordering-AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F94EC18286AD993004A959E /* Debug */,
+				7F94EC19286AD993004A959E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7F94EBE2286AD991004A959E /* Project object */;
+}
